@@ -1,0 +1,10 @@
+.logo {
+  margin-left: auto;
+  margin-right: auto;
+  height: 8em;
+  padding: 1.5em;
+  will-change: filter;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #9dff94ce);
+}

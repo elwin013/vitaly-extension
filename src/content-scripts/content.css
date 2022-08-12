@@ -1,0 +1,12 @@
+#vitaly-icon-wrapper {
+  cursor: pointer;
+  position: fixed;
+  width: 64px;
+  height: 64px;
+  bottom: 50px;
+  right: 50px;
+}
+
+#vitaly-icon-wrapper > img {
+  width: 64px;
+}
