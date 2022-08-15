@@ -1,6 +1,7 @@
 {
   "name": "vitaly-extension",
   "description": "A starter template for Chrome Extension (MV3) with Vite, Vue and Typescript",
+  "private": true,
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
@@ -10,10 +11,6 @@
     "test": "vitest",
     "lint": "yarn run eslint --ext .js,.ts,.vue,.jsx src/",
     "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss,md,vue}'"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/elwin013/vitaly-extension.git"
   },
   "dependencies": {
     "vue": "^3.2.37",
