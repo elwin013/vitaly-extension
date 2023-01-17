@@ -56,7 +56,6 @@ Thanks to working HMR you will not have to remove and add extension manually.
 
 4. That's all, folks! You have working extension and can develop it!
 
-
 ## Packaging production version of extension
 
 > For details about extension version - please see `Extension version in manifest.json`!
@@ -66,13 +65,13 @@ Thanks to working HMR you will not have to remove and add extension manually.
 3. Run `npm run package` to build production version of extension and package it into `.crx` file.
 4. Packaged extension will be in `dist/name-from-package-json.crx`.
 
-Scripts for generating secrets is based on [this answer on StackOverflow by wOxxOm](https://stackoverflow.com/a/23877974). 
+Scripts for generating secrets is based on [this answer on StackOverflow](https://stackoverflow.com/a/23877974). 
 To obtain extension id from private key you can use command `2>/dev/null openssl rsa -in secrets/private-key.pem -pubout -outform DER |  shasum -a 256 | head -c32 | tr 0-9a-f a-p`.
 
 ## Extension version in manifest.json
 
 All metadata of extension is stored in `src/manifest.json`. 
-During build process version in aforementioned file is replaced with the version from `package.json.`
+During build process version in aforementioned file is replaced with the version from `package.json`.
 This allows to easily bump version of extension using e.g. `npm version x.y.z`.
 
 ## License
