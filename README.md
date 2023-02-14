@@ -19,10 +19,9 @@ Vitaly is a starter for the Chrome extension (Manifest V3) with Vue3 + Typescrip
 - 🔥 Hot Module Reload (HMR) (thanks to [CRXJS](https://github.com/crxjs/chrome-extension-tools))
 - ✍️ Example of content script, popup and options page
 - ⚙️ Run, build and package extension (for Chrome-based browsers) - with single commands :-) 
-
 ## Scaffold your new extension with Vitaly
 
-> Vitaly requires Node > 16.16.0 but should work with 14.x too! Tweak `engines` section in `package.json` if needed. :-)
+> Vitaly requires Node > 18.14.0 (latest LTS) but should work with 14.x and 16.x too! Tweak `engines` section in `package.json` if needed. :-)
 
 ### GitHub Template
 
@@ -37,6 +36,13 @@ npx degit elwin013/vitaly-extension my-new-great-extension
 cd my-new-great-extension
 npm install
 ```
+
+
+## Issues / known problems
+
+* Development works on Linux / Mac OS, but probably not work on Windows - 
+  please see [crxjs/chrome-extension-tools#474](https://github.com/crxjs/chrome-extension-tools/pull/474) for more details
+* Uses `"type": "module"` in `package.json - it is workaround for problem with resolving entry ([crxjs/chrome-extension-tools#567](https://github.com/crxjs/chrome-extension-tools/issues/567#issuecomment-1304843039)) 
 
 ## Developing your extension with Vitaly
 

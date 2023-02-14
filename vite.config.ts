@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import { crx } from '@crxjs/vite-plugin';
-import manifest from './src/manifest.json';
+import manifest from './src/manifest.json' assert { type: 'json' };
 import packageJson from './package.json';
 
 manifest.version = packageJson.version;
