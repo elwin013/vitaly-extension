@@ -17,4 +17,12 @@ export default defineConfig({
     },
   },
   plugins: [vue(), crx({ manifest })],
+  server: {
+    // Fix for HMR based on https://github.com/crxjs/chrome-extension-tools/issues/746
+    strictPort: true,
+    port: 5173,
+    hmr: {
+      clientPort: 5173,
+    },
+  },
 });
